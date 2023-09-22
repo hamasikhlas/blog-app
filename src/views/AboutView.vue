@@ -1,7 +1,7 @@
 <template>
 <main>
         <div class="selection-profil">
-            <img  class="profil" alt="" src="../assets/logo-biodata.JPG" >
+            <img  class="profil" alt="" src="../assets/logo.jpg" >
             <div class="bio">
                 <h1>Muhammad Hamas Ikhlas</h1>
                 <h3>Front-End Developer</h3>

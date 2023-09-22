@@ -12,8 +12,8 @@
                 <td>{{ item.title }}</td>
                 <td>{{ item.content }}</td>
                 <td>
-                    <v-btn @click="('updateData', item)" color="blue" type="submit" variant="tonal" class='mr-2' >EDIT</v-btn>
-                    <v-btn @click="('deleteData', item.id)" color="red" type="submit" variant="tonal">DELETE</v-btn>
+                    <v-btn @click="$emit('updateData', item)" color="blue" type="submit" variant="tonal" class='mr-2' >EDIT</v-btn>
+                    <v-btn @click="$emit('deleteData', item.id)" color="red" type="submit" variant="tonal">DELETE</v-btn>
                 </td>
             </tr>
         </tbody>

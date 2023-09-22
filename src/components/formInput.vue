@@ -5,7 +5,7 @@
             <v-card-title class="d-flex justify-center align-center mb-5 mt-2"  >Form Blog</v-card-title>
             <div class="alert alert-success" v-if="blog.alert === true" role="alert">
                 {{ blog.message }}</div>
-            <form @submit.prevent="('submitData')">
+            <form @submit.prevent="$emit('submitData')">
                 
                 <v-text-field 
                 v-model="blog.title" 
@@ -31,7 +31,7 @@
                 class="mt-2" 
                 color="red"
                 v-if="blog.updatequery" 
-                @click="('clearData')"
+                @click="$emit('clearData')"
                         >Cancel</v-btn>
             </form>
         </v-card-item>
